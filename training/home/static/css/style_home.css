@@ -1,0 +1,162 @@
+
+/* header */
+.header {
+    color: #fff;
+}
+
+.header .logo .logo-text {
+    color: #fff;
+    font-weight: bold;
+    font-size: 50px;
+}
+
+.header .links {
+    margin-bottom: 0;
+    padding: 22px 0;
+}
+.header .links li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    margin-right: 40px;
+}
+
+.header .links li a.active {
+    
+    text-decoration: underline;
+}
+
+
+.header .status {
+    height: 100%;
+    
+}
+
+
+.header .status .st-user {
+    margin-bottom: 0;
+    align-items: center;
+    display: flex;
+    margin-left: 25px;
+    
+}
+
+.header .status .st-user .out {
+    color: #fff;
+    background-color: #007bff;
+    border: 0;
+}
+.header .status .st-user button:focus {
+    outline: none;
+    outline-color: none;
+    outline-style: none;
+    outline-width: 0;
+    outline: none;
+    outline-color: none;
+    outline-style: auto;
+    outline-width: 0;
+}
+
+.header .status .st-user button:hover {
+    text-decoration: underline;
+}
+/* box Add */
+
+.box-item {
+    margin-top: 70px;
+    
+}
+.box-item .item {
+    
+    background-color: #007bff;
+    padding: 55px 25px 50px;
+    border-radius: 25px;
+    overflow: hidden;
+    position: relative;
+    margin-bottom: 40px;
+}
+
+
+.box-item .item .btn-update {
+    position: absolute;
+    left: 0;
+    top: 0;
+    border-bottom-right-radius: 50%;
+}
+
+.box-item .item .btn-delete {
+    position: absolute;
+    right: 0;
+    top: 0;
+    border-bottom-left-radius: 50%;
+}
+
+.box-item .item .subject {
+    width: 100%;
+    padding: 10px 15px;
+    border-radius: 15px;
+    border: 0;
+    margin-bottom: 20px;
+    color: #685858;
+
+
+}
+
+.box-item .item .subject:focus {
+    border: 0;
+    outline: 0;
+}
+
+.box-item .item .content {
+    width: 100%;
+    border-radius: 15px;
+    height: 250px;
+    border: 0;
+    color: #685858;
+    padding: 5px 15px;
+    margin-bottom: 5px;
+
+}
+
+.box-item .item .content:focus {
+    border: 0;
+    outline: 0;
+}
+
+
+.box-item .item .btn-send {
+
+    width: 100%;
+    display: inline-block;
+    position: absolute;
+    padding: 13px 0;
+    bottom: 0;
+    left: 0;
+    letter-spacing: 7px;
+    border: 0;
+    font-weight: bold;
+}
+
+
+
+
+.box-item .item.emails {
+    width: 100%;
+    height: 429px;
+}
+
+.box-item .item.emails textarea {
+    width: 100%;
+    height: 100%;
+    border: 0;
+    margin: 0;
+    padding: 10px 15px;
+    border-radius: 15px;
+}
+
+
+.box-item .item.emails textarea:focus {
+    border: 0;
+    outline: 0;
+
+}

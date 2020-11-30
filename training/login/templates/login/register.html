@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
+</head>
+<body>
+    <div style="width: 40%;  margin: auto;  margin-top:18vh; padding: 0 30px; background-color: #302d2d;color:white">
+        <h2 style="padding: 30px 0px 24px 0; text-align: center;"><span>FORM </span> REGISTRATION</h2>
+        
+        <form name="form" action="/reg/success/" method="POST">{% csrf_token %}
+
+            <label for="username" style="text-align: left;">UserName: </label>
+            <input type="text" style="width: 100%;" name="username" id="username" required>
+
+            <label for="email" style="text-align: left;">Email:</label> {% if email_is_exist %}<span style="color:red"> email is exist</span>{% endif %}
+            <input type="email" style="width: 100%;" name="email" id="email" required>
+
+            <label for="password" style="text-align: left;">Password:</label>
+            <input type="password" style="width: 100%;" name="password" id="password" required>
+            <br>
+            <br>
+
+            <h4>Gender</h4>
+            <label for="">Male </label>
+            <input type="radio" name="gender"  value="male" checked>
+            <label for="" style="margin-left: 20px;"> Female</label>
+            <input type="radio" name="gender" value="female">
+            
+            <br>
+            <input name="" style="width: 40%;margin-bottom: 32px;" id="" class="btn btn-primary" type="submit" value="submit">
+            <a href="{% url 'login' %}"style= "float: right;">--> Login</a>
+            
+        </form>
+        
+    </div>
+</body>
+</html>
