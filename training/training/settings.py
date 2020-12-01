@@ -24,9 +24,9 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'cu3c_tod1s8m5yrp9_xu@zm8nfmo0@o5ot4yz7808k!k$+9lg$'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
-ALLOWED_HOSTS = ['mkhost.pythonanywhere.com']
+ALLOWED_HOSTS = ['mkhost.pythonanywhere.com','127.0.0.1']
 
 
 # Application definition
@@ -77,6 +77,25 @@ WSGI_APPLICATION = 'training.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/3.1/ref/settings/#databases
 
+
+# SILENCED_SYSTEM_CHECKS = [
+#     'django_mysql.W002',
+# ]
+
+
+# DATABASES = {
+#     'default': {
+#         'ENGINE': 'django.db.backends.mysql',
+#         'NAME': 'mkhost$mynodes',
+#         'USER': 'mkhost',
+#         'PASSWORD': '01140305151zZ',
+#         'HOST': 'mkhost.mysql.pythonanywhere-services.com',
+#         'OPTIONS': {
+#             'sql_mode': 'traditional',
+
+#         },
+#     }
+# }
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.sqlite3',
